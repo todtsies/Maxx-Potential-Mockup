@@ -1,93 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maxx Potential</title>
+
+    <!-- Linking my external stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <!-- Bootstrap -->
+
+    <!-- Bootstrap link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        
+
 </head>
+
+<!-- The entire content of the page is all under the body tag -->
+
 <body>
+
+    <!-- The NavBar with the Maxx Potential logo and the text in the top right corner is located in between the nav tags -->
     <nav>
-        <div id="nav">
-            <div class="left">
-                    <img src="images/Company-Logo.png" alt="Company-Logo" class="company-logo">
-                
-            </div>
-            <div class="right">
-                <h4><strong>HELLO, I'M EMILY</strong></h4>
-                <h4 class="webdesigner">Web Designer</h4>
-            </div>
+        <!-- You can find the .left class attributes in the style.css file -->
+        <div class="left">
+            <!-- Because I put the images folder in the root directory, I can locate the picture I need by typing in the folder's name (images) -->
+            <img src="images/Company-Logo.png" alt="Company-Logo" class="company-logo">
+
+        </div>
+
+        <!-- You can find the .right class attributes in the style.css file -->
+        <div class="right">
+            <!-- The strong tag bolds the text -->
+            <h4><strong>HELLO, I'M EMILY</strong></h4>
+            <!-- The .webdesigner class makes the text-weight lighter than the text above -->
+            <h4 class="webdesigner">Web Designer</h4>
         </div>
     </nav>
+    <!-- End of NavBar -->
 
+    <!-- The main content of the page is located in between the main tags -->
     <main>
         <div class="hero1">
-            <img src="images/hero1.jpg" alt="bigpicture" class="big-picture">
+            <!-- Because I put the images folder in the root directory, I can locate the picture I need by typing in the folder's name (images) -->
+            <!-- The alt tag describes the picture if the picture does not load -->
+            <img src="images/hero1.jpg" alt="Scenic Pic" class="big-picture">
         </div>
-
+        <!-- This section contains the "Porfolio" portion of the page -->
         <section>
+            <!-- Google "Bootstrap containers" to learn more about what they do and benefits they offer -->
             <div class="container">
+                <!-- The "text-center" class is a good example of why it is important to use an external stylesheet in this situation. You can reuse these classes over and over, without having to type the same styles again and again. -->
                 <h2 class="portfolio text-center m-4">
                     PORTFOLIO
                 </h2>
-                <div class="card-container m-4 row">
+                <!-- "Row" is coming from Bootstrap's grid system. It's used to layout, align content, and make fully responsive. -->
+                <div class="row">
+                    <!-- Google Bootstrap's columns. This is breaking down each column based on the size of the screen -->
                     <div class="col-12 col-md-6 col-xl-4">
-                        
-                            <div class="card-title text-center">
-                                <p class="mt-0 text-center helvetica">TECHNOLINE</p>
-                                <p class="italic">
-                                    <small>technoline.com</small>
-                                </p>
-                            </div>
-                            <div class="card-body">
-                                <img src="images/company photo1 (1).jpg" alt="prettypic" class="card-img">
-                        
-                            </div>
-        
+                        <!-- Bootstrap's cards -->
+                        <div class="card-title text-center">
+                            <!-- "mt-0" stands for margin-top: 0 -->
+                            <p class="mt-0 text-center helvetica">TECHNOLINE</p>
+                            <!-- Check out the .helvetica and .italic classes in the style.css file to see what attributes they are adding -->
+                            <p class="italic">
+                                <small>technoline.com</small>
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <img src="images/company photo1 (1).jpg" alt="prettypic" class="card-img">
+                        </div>
+                    </div>
+                    <!-- Everything is the same for each of the portfolio cards, except the words! -->
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="card-title text-center">
+                            <p class="mt-0 helvetica text-center">MAJESTIQUE</p>
+                            <p class="italic">
+                                <small>majestique.com</small>
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <img src="images/company photo2.jpg" alt="prettypic" class="card-img">
+
+                        </div>
                     </div>
 
                     <div class="col-12 col-md-6 col-xl-4">
-                            <div class="card-title text-center">
-                                <p class="mt-0 helvetica text-center">MAJESTIQUE</p>
-                                <p class="italic">
-                                    <small>majestique.com</small>
-                                </p>
-                            </div>
-                            <div class="card-body">
-                                <img src="images/company photo2.jpg" alt="prettypic" class="card-img">
-                        
-                            </div>
-                    </div>
 
-                    <div class="col-12 col-md-6 col-xl-4">
-                        
-                            <div class="card-title text-center">
-                                <p class="mt-0 text-center helvetica">SILVERZIM</p>
-                                <p class="italic">
-                                    <small>silverzim.com</small>
-                                </p>
-                            </div>
-                            <div class="card-body">
-                                <img src="images/company photo3.jpeg" alt="prettypic" class="card-img">
-                        
-                            </div>
-                        
+                        <div class="card-title text-center">
+                            <p class="mt-0 text-center helvetica">SILVERZIM</p>
+                            <p class="italic">
+                                <small>silverzim.com</small>
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <img src="images/company photo3.jpeg" alt="prettypic" class="card-img">
+
+                        </div>
+
                     </div>
 
                 </div>
             </div>
-            
+
         </section>
     </main>
+    <!-- End of Main section -->
 
+    <!-- Beginning of Footer -->
     <footer class="text-center">
-            <p>&copy; 2021 <u>Emily's Web Dev</u> All Rights Reserved.</p>
+        <p>&copy; 2021 <u>Emily's Web Dev</u> All Rights Reserved.</p>
     </footer>
-    
+    <!-- End of Footer -->
+
 </body>
+
 </html>

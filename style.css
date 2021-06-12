@@ -1,0 +1,87 @@
+.helvetica {
+    font-family: "Helvetica Neue";
+    font-weight: 100;
+    font-size: 28px;
+}
+
+.italic {
+    font-family: "Baskerville"; 
+    font-size: 24px; 
+    font-style: italic; 
+    color: #BB1F25;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+}
+.portfolio {
+    font-weight: bold;
+}
+
+.mt-0 {
+    margin-bottom: -20px;
+}
+
+.card-title {
+    border-top: 2px solid;
+    border-bottom: 4px solid #0D4B6E;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+    margin: 20px;
+    margin-right: 75px;
+}
+
+.company-logo {
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    margin-left: 75px;
+}
+
+.big-picture {
+    width: 100%;
+    height: 450px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+footer {
+    background-color: #3D3D3D;
+    color: white;
+    width: 100%;
+    height: 100px;
+    font-family: "Helvetica Neue";
+    margin-bottom: 0;
+    padding: 2.5rem 1rem;
+}
+
+.webdesigner {
+    font-weight: 100;
+    font-family: Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    .big-picture {
+        height: 200px;
+    }
+
+    .right, .left {
+        text-align: center;
+    }
+
+    .right {
+        padding-right: 10px;
+    }
+    .company-logo {
+        height: 50%;
+        width: 50%;
+        margin-left: 25px;
+    }
+}
+
